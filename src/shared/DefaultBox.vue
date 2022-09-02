@@ -1,5 +1,5 @@
 <template>
-  <div class="default-box" :class="{ highlight }">
+  <div class="new-box" :class="{ highlight }">
     <slot />
   </div>
 </template>
@@ -21,7 +21,6 @@ export default {
   hover:bg-gray-600 hover:text-gray-50;
 }
 
-.default-box.highlight {
-  @apply bg-blueGray-600 text-gray-50;
-}
-</style>
+.new-box {
+  @apply card w-full bg-base-100 shadow-xl hover:bg-base-300
+}</style>
